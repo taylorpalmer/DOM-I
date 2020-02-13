@@ -107,3 +107,20 @@ cont3[2].textContent = siteContent["contact"]["email"];
 
 let foot = document.querySelectorAll("footer p");
 foot[0].textContent = siteContent["footer"]["copyright"];
+
+let newColor = document.querySelectorAll("header nav a");
+newColor.forEach((e, i) => {
+  e.style.color = "green";
+});
+
+const newNavItem = document.createElement("a");
+newNavItem.textContent = "Confidential";
+newNavItem.style.color = "green";
+let newNav = document.querySelector("nav");
+newNav.appendChild(newNavItem);
+
+const newNavItem2 = document.createElement("a");
+newNavItem2.textContent = "Secret";
+newNavItem2.style.color = "green";
+let newNav2 = document.querySelector("nav");
+newNav2.prepend(newNavItem2);
